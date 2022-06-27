@@ -86,7 +86,7 @@ public class TextEncoder {
     private static void countSymbols(String[] gamescript){
         System.out.println("sfc.segahr.BusinessLayer.countSymbols() - Counting symbols ...");
         Map<Integer,Map<Integer,Integer>> symbolCounters = new HashMap<>();
-        byte previousSymbol = (byte)0xFE;
+        byte previousSymbol = (byte)0x4B;
         for (String string : gamescript) {
             //System.out.println(string);
             int stringPointer = 0;
@@ -118,12 +118,12 @@ public class TextEncoder {
                     }
                 }
             }
-            symbols[symbolsPointer] = (byte)0xFE;
+            symbols[symbolsPointer] = (byte)0x4B;
             if(symbolsPointer<stringPointer){
                 symbols = Arrays.copyOf(symbols,symbolsPointer+1);
             }
             //System.out.println("Symbol bytes : "+Arrays.toString(symbols));
-            previousSymbol = (byte)0xFE;
+            previousSymbol = (byte)0x4B;
             for(int l=0;l<symbols.length;l++){
                 if(!symbolCounters.containsKey(previousSymbol&0xFF)){
                     symbolCounters.put(previousSymbol&0xFF,new HashMap<Integer,Integer>());
@@ -233,7 +233,7 @@ public class TextEncoder {
     public static void produceTextbanks(String[] gamescript){
         System.out.println("sfc.segahr.BusinessLayer.produceTextbanks() - Producing text banks ...");
         newStringBytes = new byte[gamescript.length][];
-        byte previousSymbol = (byte)0xFE;
+        byte previousSymbol = (byte)0x4B;
         for(int i = 0;i<gamescript.length;i++){
             String string = gamescript[i];
             //System.out.println(string);
@@ -266,12 +266,12 @@ public class TextEncoder {
                     }
                 }
             }
-            symbols[symbolsPointer] = (byte)0xFE;
+            symbols[symbolsPointer] = (byte)0x4B;
             if(symbolsPointer<stringPointer){
                 symbols = Arrays.copyOf(symbols,symbolsPointer+1);
             }
             //System.out.println("Symbol bytes : "+Arrays.toString(symbols));
-            previousSymbol = (byte)0xFE;
+            previousSymbol = (byte)0x4B;
             StringBuilder sb = new StringBuilder();
             for(int l=0;l<symbols.length;l++){
                 sb.append(newHuffmanTreeTopNodes[previousSymbol&0xFF].getCodeBitString(symbols[l]));

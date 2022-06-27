@@ -86,12 +86,12 @@ public class TextDecoder {
     private static String parseString(byte[] data, short offset){
         StringBuilder string = new StringBuilder();
         StringBuilder bitsString = new StringBuilder();
-        PREVIOUS_SYMBOL = (byte)0xFE;
+        PREVIOUS_SYMBOL = (byte)0x4B;
         STRING_BYTE_COUNTER = 0;
         STRING_BIT_COUNTER = 0;
         while(true){
             byte symbol = parseNextSymbol(trees[(int)PREVIOUS_SYMBOL&0xFF],data,offset,bitsString);
-            if((symbol&0xFF) == 0xFE){
+            if((symbol&0xFF) == 0x4B){
                 //System.out.println(sb.toString());
                 break;
             }else{

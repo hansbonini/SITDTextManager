@@ -483,7 +483,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel21.setText("Huffman Trees Offsets :");
 
-            jTextField21.setText("2E196");
+            jTextField21.setText("1AEC0");
             jTextField21.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField21ActionPerformed(evt);
@@ -492,7 +492,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel22.setText(".. 0x");
 
-            jTextField22.setText("2E394");
+            jTextField22.setText("1AF7A");
             jTextField22.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField22ActionPerformed(evt);
@@ -501,7 +501,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel23.setText("Huffman Trees :");
 
-            jTextField23.setText("2E394");
+            jTextField23.setText("1AF7A");
             jTextField23.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField23ActionPerformed(evt);
@@ -510,7 +510,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel24.setText(".. 0x");
 
-            jTextField24.setText("2EB34");
+            jTextField24.setText("1B529");
             jTextField24.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField24ActionPerformed(evt);
@@ -519,7 +519,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel30.setText("Textbanks Pointer : 0x");
 
-            jTextField30.setText("28000");
+            jTextField30.setText("50000");
             jTextField30.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField30ActionPerformed(evt);
@@ -528,7 +528,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel33.setText("Max Index : $");
 
-            jTextField33.setText("10AA");
+            jTextField33.setText("BFF");
             jTextField33.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField33ActionPerformed(evt);
@@ -977,7 +977,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel26.setText("Huffman Trees Offsets : 0x");
 
-            jTextField26.setText("2E196");
+            jTextField26.setText("1AEC0");
             jTextField26.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField26ActionPerformed(evt);
@@ -986,7 +986,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel27.setText("Huffman Trees : 0x");
 
-            jTextField27.setText("2E394");
+            jTextField27.setText("1AF7A");
             jTextField27.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField27ActionPerformed(evt);
@@ -995,7 +995,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel31.setText("Textbanks Pointer : 0x");
 
-            jTextField31.setText("28000");
+            jTextField31.setText("50000");
             jTextField31.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField31ActionPerformed(evt);
@@ -1004,7 +1004,7 @@ public class MainEditor extends javax.swing.JFrame {
 
             jLabel32.setText("Textbanks : 0x");
 
-            jTextField32.setText("2EB34");
+            jTextField32.setText("5747C");
             jTextField32.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
                     jTextField32ActionPerformed(evt);
