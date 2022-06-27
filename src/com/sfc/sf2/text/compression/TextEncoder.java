@@ -293,7 +293,7 @@ public class TextEncoder {
         byte[] textbankBytes = new byte[0];
         int stringIndex = 0;
         int textbankIndex = 0;
-        newTextbanks = new byte[(newStringBytes.length/256)+1][];
+        newTextbanks = new byte[(newStringBytes.length/256)][];
         for(int i=0;i<newStringBytes.length;i++){
             byte stringBytesLength = (byte)newStringBytes[i].length;
             byte[] workingByteArray = Arrays.copyOf(textbankBytes, textbankBytes.length+1+newStringBytes[i].length);

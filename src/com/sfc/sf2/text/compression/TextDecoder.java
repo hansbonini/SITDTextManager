@@ -74,7 +74,7 @@ public class TextDecoder {
             System.out.println("$"+stringIndex+"("+lineLength+")="+s);
             //System.out.println(Arrays.toString(Arrays.copyOfRange(data,bankPointer+1,(bankPointer+data[bankPointer]+1))));
             textbankStrings[i] = s;
-            bankPointer += (data[bankPointer]&0xFF)+1;
+            bankPointer += (data[bankPointer]&0xFF);
             if(bankPointer+1>=data.length){
                 textbankStrings = Arrays.copyOfRange(textbankStrings,0,i+1);
                 break;
