@@ -87,8 +87,8 @@ public class Symbols {
                                             ")", /* Represents character '”' (ALT 0148) for easier writing in game script*/
                                             "\"",
                                             ":",
-                                            "#",
-                                            "{UNKNOWN}",
+                                            "\\UNUSED",
+                                            "{UNKOWN}",
                                             "{N}",
                                             "{W1}",
                                             "{W2}",

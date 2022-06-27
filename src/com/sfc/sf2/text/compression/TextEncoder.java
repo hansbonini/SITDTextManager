@@ -280,7 +280,7 @@ public class TextEncoder {
             while(sb.length()%8!=0){
                 sb.append("0");
             }
-            byte[] stringBytes = new byte[sb.length()/8];
+            byte[] stringBytes = new byte[(sb.length()/8)];
             for(int m=0;m<sb.length();m+=8){
                 Byte b = (byte)Integer.parseInt(sb.substring(m, m+8), 2);
                 stringBytes[m/8] = b;
@@ -295,7 +295,7 @@ public class TextEncoder {
         int textbankIndex = 0;
         newTextbanks = new byte[(newStringBytes.length/256)][];
         for(int i=0;i<newStringBytes.length;i++){
-            byte stringBytesLength = (byte)newStringBytes[i].length;
+            byte stringBytesLength = (byte)(newStringBytes[i].length+1);
             byte[] workingByteArray = Arrays.copyOf(textbankBytes, textbankBytes.length+1+newStringBytes[i].length);
             workingByteArray[textbankBytes.length] = stringBytesLength;
             System.arraycopy(newStringBytes[i], 0, workingByteArray, textbankBytes.length+1, newStringBytes[i].length);
